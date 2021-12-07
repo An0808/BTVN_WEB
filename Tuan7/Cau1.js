@@ -14,16 +14,17 @@ const case1 ="tranduong";
 const case2 ="hitclubhiuhiu";
 const case3 ="aabb";
 
-function firstNonRepeatingCharacter(str) {
-  for (let i in str) {
+function Repeat(str) {
+  for (let i in str) 
+  {
     let char = str[i];
-    if (str.indexOf(char) == str.lastIndexOf(char)) {
+    if (str.indexOf(char) == str.lastIndexOf(char)) 
+    {
       return i;
     }
   }
   return -1;
 }
-
-console.log(firstNonRepeatingCharacter(case1));
-console.log(firstNonRepeatingCharacter(case2));
-console.log(firstNonRepeatingCharacter(case3));
+console.log(Repeat(case1));
+console.log(Repeat(case2));
+console.log(Repeat(case3));
